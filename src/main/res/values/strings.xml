@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ListaContatos</string>
+    <string name="iv_photo_content_description">iv_photo</string>
+    <string name="lv_photo_content_description">lv_photo</string>
+</resources>

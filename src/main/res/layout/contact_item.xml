@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp">
+
+     <TextView
+         android:id="@+id/lv_photo"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         android:contentDescription="@string/lv_photo_content_description"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         tools:src="@tools:sample/avatars"/>
+
+    <TextView
+        android:id="@+id/lv_name"
+        app:layout_constraintTop_toTopOf="@+id/lv_photo"
+        app:layout_constraintStart_toEndOf="@+id/lv_photo"
+        android:textSize="20sp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Nome do Contato"/>
+
+        <TextView
+            android:id="@+id/lv_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintStart_toEndOf="@+id/lv_photo"
+            app:layout_constraintTop_toBottomOf="@+id/lv_name"
+            tools:text="(00) 0.0000 - 0000" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
